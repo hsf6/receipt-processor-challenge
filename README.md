@@ -31,7 +31,7 @@ Receipt Processor is a Go-based web service that calculates points from receipts
 
 ## API Endpoints
 
-- **POST /receipts/process**
+- **POST** '/receipts/process'
   
   Submit a receipt and calculate points.  
   - Request:  
@@ -68,7 +68,7 @@ Receipt Processor is a Go-based web service that calculates points from receipts
     { "id": "cb445f45-21e3-48b6-acd9-3150c9ed429c" }
     ```
 
-- **GET /receipts/{id}/points**
+- **GET** '/receipts/{id}/points'
   
   Retrieve the total points for a submitted receipt.  
   - Response:  
@@ -76,7 +76,7 @@ Receipt Processor is a Go-based web service that calculates points from receipts
     { "points": 28 }
     ```
 
-- **GET /receipts/{id}/breakdown**
+- **GET** '/receipts/{id}/breakdown'
 
   (This is an additional endpoint)
   Retrieve the breakdown of points earned for a receipt, showing how points are calculated.  
