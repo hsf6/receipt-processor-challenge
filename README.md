@@ -34,7 +34,7 @@ Receipt Processor is a Go-based web service that calculates points from receipts
 - **POST** `/receipts/process`
   
   Submit a receipt and calculate points.  
-  - Request:  
+  - Request (payload.json):  
     ```json
 
     {
